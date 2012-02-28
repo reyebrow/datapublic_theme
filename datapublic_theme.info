@@ -5,6 +5,7 @@ name = DataPublic
 description = DataPublic is the default theme for the DataPublic distribution. It is based on Cogito. Cogito is the RE foundation theme and is based on Boron which is a base theme for Drupal 7 which converts the core template files to HTML5 markup.
 base theme = cogito
 core = 7.x
+version = 7.x-1.0-beta1
 engine = phptemplate
 
 ; Stylesheets  ---------------------------------------------------------------
