@@ -225,12 +225,15 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 .page-node #main .subheader { font-size: 9px; font-size: 0.9em; font-weight: bold; }
 .page-node #main .subheader a { font-weight: normal; }
 
+.addthis_counter { display: inline-block !important; }
+
 /* -----------------------------------------
    Pagination
 ----------------------------------------- */
 #main .cogito_paginate { background: none; }
 #main .cogito_paginate .pagination li.current a { border-color: #a5b33a; }
 #main .cogito_paginate .pagination li:hover a { border-color: #0185a4; }
+
 
 /* -----------------------------------------
    Comments
@@ -282,6 +285,7 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 .node-document .field-name-field-document-attachment { margin: 1em 0; }
 .node-document .field-name-field-document-attachment .button { font-size: 14px; font-size: 1.4rem; }
 .node-document .field-name-field-document-attachment .button a { color: #fff;  font-size: 18px; font-size: 1.8rem; }
+
 
 /* -----------------------------------------
    Datasets
