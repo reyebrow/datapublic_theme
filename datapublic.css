@@ -16,6 +16,11 @@ h1,h2,h3,h4,h5,h6 { color: #666; }
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; 
 } 
 
+#skip-link {
+  position: absolute;
+  left: -999em;
+}
+
 #main h2, h2 { font-size: 25px;font-size: 2.5rem; /* =25px */ font-weight: bold; } 
 #main h3, h3 { font-size: 18px;font-size: 1.8rem; /* =18px */ font-weight: bold; } 
 #main h4, h4 { font-size: 14px;font-size: 1.4rem; } /* =14px */
@@ -123,6 +128,8 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 #header-wrapper { height: 137px; overflow: hidden; }
 #logo img{ float: right; margin-top: 8px;}
 
+#header-region { min-height: 40px; }
+
 .hide-on-phones #site-name-description-wrap { }
 #site-name { font-size: 40px; font-size: 4.0rem; line-height: 1.25; }
 #site-name a { color: #333; }
@@ -140,7 +147,7 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 ----------------------------------------- */
 
 /* Language links */
-#block-locale-language { margin-top: 10px; }
+#block-locale-language { margin-top: 10px; position: absolute; right: 28%;}
 #block-locale-language div.title { display: none; }
 #block-locale-language ul li { display: inline; }
 #block-locale-language ul li a { border-left: 1px solid #eaeae3; padding: 6px 11px; }
@@ -148,7 +155,7 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 
 
 /* Search block */
-#block-search-form { border-left: 1px solid #eaeae3; float: left; }
+#block-search-form { border-left: 1px solid #eaeae3; float: left; position: absolute; right: 0px; }
 #block-search-form form { margin:10px ; }
 #block-search-form .form-submit { padding: 6px 10px; text-transform: uppercase; }
 
@@ -363,9 +370,10 @@ div.orbit-wrapper .orbit-title a {
 div.orbit-wrapper .orbit-body { line-height: 1.4; }
 #block-views-slideshow-block .orbit-image { right: 0; }
 
+
 #block-views-slideshow-block .view-id-slideshow .orbit-wrapper .views-row .orbit-content {
   -webkit-box-shadow: none;
-  background: none;
+  background: transparent;
   padding: 40px 45px;
   margin: 0;
   width: 290px;
@@ -410,4 +418,28 @@ div.orbit-wrapper .orbit-caption { color: #333; background: rgba(246,246,246,.8)
 #footer #block-follow-site .follow-links a {
   float: left;
   text-indent: -999em;
+}
+
+.hide{ display: none;}
+
+/* -----------------------------------------
+   Mobile Compatibility
+----------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  
+  
+  .container { background: #fff; background-image: none;}
+  
+  /*   Header re-jigging */
+  #block-search-form { float: right; position: static;}
+  #block-locale-language{ float: left; position: static;}
+  .sf-menu li.sf-depth-1 { padding: 4px 5px 2px 5px; }
+  
+  /*   Orbit rejigging */
+  #footer .block { margin: 0 10px; }
+  #block-views-slideshow-block .view-id-slideshow .orbit-wrapper .views-row .orbit-content{ position: absolute; bottom: 20px;}
+  div.orbit-wrapper .orbit-title, div.orbit-wrapper .orbit-title a {font-size: 20px; font-size: 2rem;}
+  div.orbit-wrapper .orbit-body { display: none; }
+  div.orbit-wrapper .orbit-caption { overflow: hidden;position: absolute; height: 1px; width: 1px;}
 }

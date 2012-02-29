@@ -11,7 +11,7 @@
 ?>
 <div id="page" class="hfeed container" role="main">
   
-  <p id="skip-link" class="hide-on-desktops"><em><a href="#access">Skip to Navigation</a></em> &darr;</p>
+  <p id="skip-link" class=""><em><a href="#access">Skip to Navigation</a></em> &darr;</p>
   
   <div id="highlighted" class="row">
   	<div class="columns twelve centered">
@@ -34,7 +34,7 @@
         <?php endif; ?>   
         <div class="columns ten">
           <div class="row">        
-            <div id="header-region" class="columns six offset-by-six">
+            <div id="header-region" class="columns twelve">
               <?php // Search Bar region  ?>
               <?php print render($page['header']) ?>
             </div>
@@ -56,7 +56,7 @@
       		  <?php if ($site_slogan): ?>
               <h4 id="site-slogan"><?php print $site_slogan; ?></h4>
             <?php endif; //if ($site_slogan) ?>
-            <div>
+            </div>
           </div> 
         </div><?php // columns ten?>
     	</hgroup>
@@ -80,7 +80,7 @@
       		  <?php if ($site_slogan): ?>
               <h4 id="site-slogan"><?php print $site_slogan; ?></h4>
             <?php endif; //if ($site_slogan) ?>
-            <div>
+            </div>
     	</hgroup>
   
       <?php //UTILITIES  ?>
@@ -88,8 +88,11 @@
       <div id="utilities" class="row">
         <?php //MAIN MENU NAVBAR  ?>
         <?php if ($page['nav']): ?>
-    		<nav id="access" role="navigation" class="row">
+    		<nav id="access" role="navigation" class="row hide-on-phones">
           <?php print render($page['nav']); ?>
+        </nav>
+        <nav id="access-mobile" role="navigation" class="row show-on-phones">
+          <?php print render($page['nav_mobile']); ?>
         </nav>
         <?php endif; ?>
       </div>
