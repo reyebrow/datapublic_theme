@@ -279,9 +279,9 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
    Documents
 ----------------------------------------- */
 .node-type-document .node-document div.submitted { margin-bottom: 0; }
-.node-document .field-name-field-document-attachment { margin: 1em 0; }
-.node-document .field-name-field-document-attachment .button { font-size: 14px; font-size: 1.4rem; }
-.node-document .field-name-field-document-attachment .button a { color: #fff;  font-size: 18px; font-size: 1.8rem; }
+.node-document #document-download-btn { margin: 1em 0; }
+.node-document #document-download-btn .button { font-size: 14px; font-size: 1.4rem; }
+.node-document #document-download-btn .button a { color: #fff;  font-size: 18px; font-size: 1.8rem; }
 
 /* -----------------------------------------
    Datasets
