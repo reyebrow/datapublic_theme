@@ -302,7 +302,7 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 .views-field-field-dataset-xml span,
 .views-field-field-dataset-api span {
   padding: 1px 3px 2px;
-  font-size: 97px;
+  font-size: 9.7px;
   font-size: 0.975rem;
   font-weight: bold;
   color: #ffffff;
