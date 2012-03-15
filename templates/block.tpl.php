@@ -54,4 +54,4 @@
   <div class="content">
     <?php print $content ?>
   </div>
-</<?php print $tag; ?>> <!-- /.block -->
+</<?php print $tag; ?>> <?php // /.block ?>
