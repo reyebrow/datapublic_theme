@@ -155,9 +155,9 @@ table tbody tr:nth-child(even), table thead, table tfoot { background: #f8fafa; 
 
 
 /* Search block */
-#block-search-form { border-left: 1px solid #eaeae3; float: left; position: absolute; right: 0px; }
-#block-search-form form { margin:10px ; }
-#block-search-form .form-submit { padding: 6px 10px; text-transform: uppercase; }
+#block-search-form, #block-search-form--2 { border-left: 1px solid #eaeae3; float: left; position: absolute; right: 0px; }
+#block-search-form form, #block-search-form--2 form { margin:10px ; }
+#block-search-form .form-submit, #block-search-form--2 .form-submit { padding: 6px 10px; text-transform: uppercase; }
 
 /* -----------------------------------------
    Header: Navigation and Breadcrumb
